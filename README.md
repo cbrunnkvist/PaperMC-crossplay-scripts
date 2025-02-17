@@ -26,6 +26,8 @@ Thanks to years of toil by lovely hackers around the world, we have wonderful op
 
 <sub>I also include [Bluemap](https://bluemap.bluecolored.de/) which provides an awesome Google StreetView-like experience in the web browser but it's completely unrelated to crossplay.</sub>
 
+For _${reasons}_, the java entrypoint is always `server.jar` which is a symlink to the most recent PaperMC JAR. The plugin JAR:s on the other hand are meant to have only active version each, but the script keeps older versions around just in case, with a `.jar_old` file extension so they don't get ambiguously loaded.
+
 ## The script
 Now each time the official Minecraft game receives an update, one-to-four .jar:s need to be updated and named on your server. This quickly becomes a major HASSLE when all you wanna do is just _play_, not be a full-time Minecraft Admin (there's an `r/admincraft` [subreddit](https://www.reddit.com/r/admincraft/)). The `download-latest-papermc-components.sh` is not meant to be an end-all-be-all server manager, just a helper script to find, download and name the latest versions of each corresponding JAR file. Please fork it and adapt it to your own needs. 
 
